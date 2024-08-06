@@ -22,6 +22,7 @@ public class PoketmonController {
 	
 	@GetMapping("/insert") // GET방식만 처리
 	public String insert() {
+		int a = 0;
 		return "/WEB-INF/views/poketmon/insert1.jsp";
 	}
 
