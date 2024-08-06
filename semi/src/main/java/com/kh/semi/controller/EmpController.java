@@ -10,4 +10,9 @@ public class EmpController {
 	public String home() {
 		return "hi hello"; 
 	}
+	
+	@RequestMapping("/hello")
+	public String hello() {
+		return "goodbye"; 
+	}
 }
