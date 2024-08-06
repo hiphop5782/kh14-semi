@@ -70,6 +70,10 @@ public class PoketmonController {
 //		return "/WEB-INF/views/poketmon/detail.jsp";
 	}
 	
+	@RequestMapping("/delete")
+	public String delete() {
+		return"hello";
+	}
 
 
 	//이미지 제공 페이지
