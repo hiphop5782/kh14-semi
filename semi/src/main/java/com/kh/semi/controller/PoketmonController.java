@@ -42,7 +42,7 @@ public class PoketmonController {
 	public String insert() {
 		return "/WEB-INF/views/poketmon/insert1.jsp";
 	}
-}
+
 ////	@RequestMapping("/insert2")//처리
 //	@PostMapping("/insert")//POST방식만 처리
 //	public String insert(@ModelAttribute PoketmonDto dto) {
