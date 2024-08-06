@@ -1,12 +1,12 @@
 package com.kh.semi;
 
-
 import java.sql.Date;
 
 import lombok.Data;
 @Data
-public class MemberDto {
 
+public class MemberDto {
+	
 	private String memberId;//아이디
 	private String memberPw;//비밀번호
 	private String memberNick;//닉네임
@@ -20,4 +20,3 @@ public class MemberDto {
 	private Date memberJoin;//가입일
 	private Date memberLogin;//최종로그인 일시
 }
-
