@@ -31,7 +31,6 @@ public class PoketmonController {
 	// 다 되거나, 다 안되거나 둘 중 하나밖에 없음
 	
 
-	String a="꼬부기";
 	@RequestMapping("/insertComplete") // 완료
 	public String insertComplete() {
 		return "/WEB-INF/views/poketmon/insert3.jsp";
