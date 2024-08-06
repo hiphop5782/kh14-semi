@@ -16,6 +16,7 @@ public class PoketmonController {
 	
 	@GetMapping("/insert") // GET방식만 처리
 	public String insert() {
+		int a = 0;
 		return "/WEB-INF/views/poketmon/insert1.jsp";
 	}
 
@@ -62,8 +63,6 @@ public class PoketmonController {
 //				return "redirect:https://placehold.co/150";
 //			}
 //		}
-	
-	String a="꼬부기";
 
 
 }
