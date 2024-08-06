@@ -10,5 +10,6 @@ public class BookDto {
 	private int bookPrice;
 	private int booknumbe;
 	private int bookc;
+	private String bookPublicationDate;
 
 }
