@@ -18,8 +18,8 @@ public class EmpController {
 
 	@RequestMapping("/hello222")
 	public String heeeello() {
-		return "goodbye2222dfasfsda"; 
-
+		return "goodbye2222dfasfsdas"; 
+	}
 	
 	@RequestMapping("/hello")
 	public String hello222() {
