@@ -7,6 +7,7 @@ public class BookDto {
 	private String name;
 	private String bookNo;
 	private String bookTitle;
+	private int bookPrice;
 	
 
 }
