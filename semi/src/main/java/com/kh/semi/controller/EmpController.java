@@ -11,8 +11,8 @@ public class EmpController {
 		return "hi hello"; 
 	}
 	
-	@RequestMapping("/hello")
+	@RequestMapping("/home2")
 	public String hello() {
-		return "goodbye"; 
+		return "hi2222222"; 
 	}
 }
