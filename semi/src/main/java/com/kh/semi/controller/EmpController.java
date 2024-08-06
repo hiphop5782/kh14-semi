@@ -15,4 +15,8 @@ public class EmpController {
 	public String hello() {
 		return "goodbye"; 
 	}
+	@RequestMapping("/hello222")
+	public String heeeello() {
+		return "goodbye2222"; 
+	}
 }
