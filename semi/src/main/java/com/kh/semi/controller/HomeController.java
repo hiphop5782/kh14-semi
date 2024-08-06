@@ -11,4 +11,8 @@ public class HomeController {
 		return "안녕";
 	}
 	
+	@RequestMapping("/developer")
+	public String developer() {
+		return "개발자 정보";
+	}
 }
