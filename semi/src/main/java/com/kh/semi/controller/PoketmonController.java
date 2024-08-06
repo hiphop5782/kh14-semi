@@ -73,5 +73,9 @@ public class PoketmonController {
 //			}
 //		}
 	
+	@RequestMapping("/insertComplete") // 완료
+	public String insertComplete() {
+		return "/WEB-INF/views/poketmon/insert3.jsp";
+	}
 
 }
