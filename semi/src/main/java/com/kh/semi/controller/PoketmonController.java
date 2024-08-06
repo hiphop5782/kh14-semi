@@ -3,15 +3,18 @@ package com.kh.semi.controller;
 import java.io.IOException;
 
 import org.springframework.stereotype.Controller;
+<<<<<<< HEAD
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.kh.spring06.dto.PoketmonDto;
+
 
 @Controller
 @RequestMapping("/poketmon")
@@ -57,4 +60,12 @@ public class PoketmonController {
 	public String insertComplete() {
 		return "/WEB-INF/views/poketmon/insert3.jsp";
 	}
+	@RequestMapping("/detail")
+	public String detail() {
+		return "ㅎㅇ";
+//		PoketmonDto dto = poketmonDao.selectOne(poketmonNo);
+//		model.addAttribute("dto", dto);
+//		return "/WEB-INF/views/poketmon/detail.jsp";
+	}
+	
 }
