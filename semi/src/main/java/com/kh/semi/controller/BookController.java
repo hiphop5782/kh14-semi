@@ -16,5 +16,5 @@ public class BookController {
 	public String datail() {
 		return "datail";
 	}
-	
+	 
 }
