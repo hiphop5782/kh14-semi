@@ -8,6 +8,6 @@ public class BookDto {
 	private String bookNo;
 	private String bookTitle;
 	private int bookPrice;
-	
+	private int booknumbe;
 
 }
