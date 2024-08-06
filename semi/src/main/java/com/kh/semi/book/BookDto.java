@@ -1,5 +1,9 @@
 package com.kh.semi.book;
 
-public class BookDto {
+import lombok.Data;
 
+@Data
+public class BookDto {
+ private String name;
+	
 }
