@@ -10,10 +10,13 @@ public class BookDto {
 	private int bookPrice;
 	private int booknumbe;
 	private int bookc;
-	private int momo;
-//	내일름은 박준호
 
-	
+	private int kako;
+
+	private String bookPublicationDate;
+	private int momo;
+	private String bookPublisher;
+
 
 
 }
