@@ -8,6 +8,6 @@ public class EmpController {
 	
 	@RequestMapping("/home")
 	public String home() {
-		return "hi";
+		return "hi hello"; 
 	}
 }
