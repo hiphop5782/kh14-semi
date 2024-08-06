@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -61,6 +62,20 @@ public class PoketmonController {
 		return "/WEB-INF/views/poketmon/insert3.jsp";
 	}
 
+	@RequestMapping("/detail")
+	public String detail() {
+		return "ㅎㅇ";
+//		PoketmonDto dto = poketmonDao.selectOne(poketmonNo);
+//		model.addAttribute("dto", dto);
+//		return "/WEB-INF/views/poketmon/detail.jsp";
+	}
+	
+	@RequestMapping("/delete")
+	public String delete() {
+		return"hello";
+	}
+
+
 	//이미지 제공 페이지
 //		@RequestMapping("/image")
 //		public String image(@RequestParam int poketmonNo) {
@@ -74,5 +89,6 @@ public class PoketmonController {
 //		}
 	
 	String a="꼬부기";
+
 
 }
