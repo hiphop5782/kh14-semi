@@ -10,13 +10,13 @@ public class BookDto {
 	private int bookPrice;
 	private int booknumbe;
 	private int bookc;
+<<<<<<< HEAD
 	private int kako;
+=======
+>>>>>>> refs/remotes/origin/main
 	private String bookPublicationDate;
-
 	private int momo;
-
-
-	
+	private String bookPublisher;
 
 
 
