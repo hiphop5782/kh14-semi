@@ -1,4 +1,4 @@
-package com.kh.semi.Controller;
+package com.kh.semi.controller;
 
 public class PoketmonController2 {
 

@@ -9,5 +9,15 @@ public class BookDto {
 	private String bookTitle;
 	private int bookPrice;
 	private int booknumbe;
+	private int bookc;
+
+	private String bookPublicationDate;
+
+	private int momo;
+
+
+	
+
+
 
 }
