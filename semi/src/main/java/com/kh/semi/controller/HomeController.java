@@ -11,4 +11,15 @@ public class HomeController {
 		return "안녕";
 	}
 	
+	@RequestMapping("/info")
+	public String info() {
+		return "홈페이지 정보";
+	}
+	
 }
+
+
+
+
+
+
