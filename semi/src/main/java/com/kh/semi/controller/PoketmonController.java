@@ -73,5 +73,6 @@ public class PoketmonController {
 //			}
 //		}
 	
+	String a="꼬부기";
 
 }

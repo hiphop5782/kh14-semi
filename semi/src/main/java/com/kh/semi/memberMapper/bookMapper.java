@@ -6,4 +6,6 @@ import org.springframework.stereotype.Service;
 public class bookMapper {
 	
   // 박명호
+//	kjh
+
 }
