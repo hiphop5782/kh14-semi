@@ -10,6 +10,10 @@ public class bookMapper {
 
 	
   // 박명호
+
 //-------이용규-------	
+
+//	kjh
+
 
 }
