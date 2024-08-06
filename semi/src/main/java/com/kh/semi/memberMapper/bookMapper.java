@@ -5,5 +5,5 @@ import org.springframework.stereotype.Service;
 @Service
 public class bookMapper {
 	
-  
+  // 박명호
 }
