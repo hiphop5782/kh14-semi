@@ -102,6 +102,13 @@ public class NoticeDao {
 								+ "select "
 								+ "login_id, notice_no, notice_title, notice_date, "
 								+ "notice_cont, file_no, notice_del_yn, login_id2 "
+								+ "from notice "
+								+ "where instr(#1. ?) > 0 "
+								+ "order by notice_no desc"
+							+ ")TMP"
+						+ ") where  rn between ? and ?";
+		sql =sql.replace("#1", column);
+		Object[] data = {keyword, beginRow, endRow};
 								
 	}
 }
