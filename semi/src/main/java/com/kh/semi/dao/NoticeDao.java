@@ -107,8 +107,38 @@ public class NoticeDao {
 								+ "order by notice_no desc"
 							+ ")TMP"
 						+ ") where  rn between ? and ?";
-		sql =sql.replace("#1", column);
+		Object[] data = {beginRow, endRow};
+		return  jdbcTemplate.query(sql, noticeListMapper, data);						
+	}
+	//페이징이 적용된 검색
+	public List<NoticeDto> selectListByPaging(
+				String column, String keyword, int page, int size) {
+		int endRow = page * size;
+		int beginRow = endRow - (size-1);
+		String sql = "select * from ("
+							+ "select rownum rn, TMP.* from ( "
+								+ "select "
+								+ "login_id, notice_no, notice_title, notice_date, "
+								+ "notice_cont, file_no, notice_del_yn, login_id2 "
+								+ "from notice "
+								+ "where instr(#1. ?) > 0 "
+								+ "order by notice_no desc"
+							+ ")TMP"
+						+ ") where  rn between ? and ?";
+		sql = sql.replace("#1", column);
 		Object[] data = {keyword, beginRow, endRow};
-								
+		return  jdbcTemplate.query(sql, noticeListMapper, data);
+	}
+	
+	//페이징의 마지막 블록 번호를 위해 게시글 수를 구하는 메소드
+	public int countByPaging() {
+		String sql = "select count(*) from notice";
+		return jdbcTemplate.queryForObject(sql, int.class);
+	}
+	public int countBypaging(String column, String keyword) {
+		String sql = "select count(*) from notice where instr(#1, ?) > 0";
+		sql = sql.replace("#1", column);
+		Object[] data = {keyword};
+		return jdbcTemplate.queryForObject(sql, int.class, data);
 	}
 }
